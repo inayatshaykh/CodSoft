@@ -13,7 +13,7 @@ public class NumberGame {
         System.out.println("Can you guess the number between 1 and 100?");
 
         do {
-            int randomNumber = random.nextInt(100) + 1; // Generates a random number from 1 to 100
+            int randomNumber = random.nextInt(100) + 1; 
             int attempts = 0;
             final int MAX_ATTEMPTS = 10;
             boolean hasGuessedCorrectly = false;
@@ -24,7 +24,7 @@ public class NumberGame {
                 System.out.print("Enter your guess: ");
                 int userGuess;
 
-                // Validate user input to ensure it's an integer
+               
                 if (scanner.hasNextInt()) {
                     userGuess = scanner.nextInt();
                     attempts++;
@@ -41,7 +41,7 @@ public class NumberGame {
                     }
                 } else {
                     System.out.println("Invalid input. Please enter a number.");
-                    scanner.next(); // Clear the invalid input from the scanner
+                    scanner.next(); 
                 }
             }
 
@@ -62,4 +62,5 @@ public class NumberGame {
 
         scanner.close();
     }
+
 }
