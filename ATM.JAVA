@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ATM {
     
-    // Nested class to represent the user's bank account
+    
     private static class BankAccount {
         private double balance;
 
@@ -100,9 +100,10 @@ public class ATM {
     }
 
     public static void main(String[] args) {
-        // We now create the BankAccount instance directly within the main method
+       
         BankAccount account = new BankAccount(1000.00); 
         ATM atm = new ATM(account);
         atm.start();
     }
+
 }
